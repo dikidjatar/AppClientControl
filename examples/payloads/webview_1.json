@@ -1,0 +1,19 @@
+{
+  "notificationId": "notif_unique_12345",
+  "title": "Latest Information For You",
+  "body": "Open to see today's important announcements.",
+  "style": "default",
+  "priority": "HIGH",
+  "channelId": "news_channel",
+  "channelName": "Information",
+  "autoCancel": true,
+  "tapAction": {
+    "action": "SHOW_WEB_PAGE",
+    "params": {
+      "title": "Announcement",
+      "displayMode": "bare",
+      "jsBridge": "true",
+      "html": "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'><style>html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: transparent; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; } .center-wrapper { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 400px; text-align: center; pointer-events: none; } .text-switcher { position: relative; height: 60px; width: 100%; } .text-item { font-size: 24px; font-weight: bold; color: #222222; text-shadow: 0px 1px 2px rgba(255,255,255,0.8); position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; opacity: 0; transform: translateY(20px); transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease; } .text-item.active { opacity: 1; transform: translateY(0); } .text-item.exit { opacity: 0; transform: translateY(-20px); }</style></head><body><div class='center-wrapper'><div class='text-switcher'><div class='text-item active'>Hello, Welcome!</div><div class='text-item'>Find Creative Ideas</div><div class='text-item'>Start Right Now</div></div></div><script>document.addEventListener('DOMContentLoaded', function() { const words = document.querySelectorAll('.text-item'); let currentIndex = 0; if (words.length <= 1) return; setInterval(() => { const currentWord = words[currentIndex]; currentWord.classList.remove('active'); currentWord.classList.add('exit'); currentIndex = (currentIndex + 1) % words.length; const nextWord = words[currentIndex]; nextWord.classList.remove('exit'); nextWord.classList.add('active'); setTimeout(() => { currentWord.classList.remove('exit'); }, 400); }, 2500); });</script></body></html>"
+    }
+  }
+}
