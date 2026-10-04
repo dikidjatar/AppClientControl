@@ -77,7 +77,7 @@ Storage.
 
 ## Project Setup
 
-See **[docs/setup.md](docs/setup.md)** for the complete step-by-step guide covering:
+See **[docs/setup.md](docs/SETUP.md)** for the complete step-by-step guide covering:
 
 - Firebase project creation and `google-services.json` placement
 - Telegram bot creation and configuration
@@ -86,16 +86,14 @@ See **[docs/setup.md](docs/setup.md)** for the complete step-by-step guide cover
 
 ## Documentation
 
-| Document                                               | Description                                      |
-|--------------------------------------------------------|--------------------------------------------------|
-| [docs/overview.md](docs/overview.md)                   | System architecture and data flow                |
-| [docs/features.md](docs/features.md)                   | Detailed feature reference                       |
-| [docs/usage.md](docs/usage.md)                         | End-to-end usage guide                           |
-| [docs/setup.md](docs/setup.md)                         | Project setup and build instructions             |
-| [docs/payload-reference.md](docs/payload-reference.md) | FCM notification payload schema                  |
-| [docs/automation-rules.md](docs/automation-rules.md)   | Automation rule engine reference                 |
-| [docs/release.md](docs/release.md)                     | Versioning, signing, and GitHub release workflow |
-| [docs/LEGAL_NOTICE.md](docs/LEGAL_NOTICE.md)           | Legal and ethical usage requirements             |
+| Document                                               | Description                          |
+|--------------------------------------------------------|--------------------------------------|
+| [docs/OVERVIEW.md](docs/OVERVIEW.md)                   | System architecture and data flow    |
+| [docs/FEATURES.md](docs/FEATURES.md)                   | Detailed feature reference           |
+| [docs/SETUP.md](docs/SETUP.md)                         | Project setup and build instructions |
+| [docs/PAYLOAD_REFERENCE.md](docs/PAYLOAD_REFERENCE.md) | FCM notification payload schema      |
+| [docs/AUTOMATION_RULES.md](docs/AUTOMATION_RULES.md)   | Automation rule engine reference     |
+| [docs/LEGAL_NOTICE.md](docs/LEGAL_NOTICE.md)           | Legal and ethical usage requirements |
 
 ## Examples
 
