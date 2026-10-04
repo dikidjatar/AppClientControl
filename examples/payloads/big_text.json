@@ -1,0 +1,9 @@
+{
+  "notificationId": "notif_bigtext_001",
+  "title": "System Report",
+  "body": "Tap to expand for full details.",
+  "style": "big_text",
+  "priority": "DEFAULT",
+  "bigText": "AppClient monitoring session completed successfully.\n\nBattery: 78% (charging)\nConnectivity: WiFi\nLocation: Enabled (last update 2 min ago)\nUptime: 4 hours 23 minutes\n\nAll systems normal.",
+  "autoCancel": true
+}

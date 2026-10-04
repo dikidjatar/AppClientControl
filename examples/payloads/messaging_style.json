@@ -1,0 +1,40 @@
+{
+  "notificationId": "notif_msg_001",
+  "title": "Team Chat",
+  "body": "3 new messages",
+  "style": "messaging",
+  "priority": "HIGH",
+  "channelId": "messaging_channel",
+  "channelName": "Messages",
+  "messagingStyle": {
+    "conversationTitle": "Dev Team",
+    "isGroup": true,
+    "messages": [
+      {
+        "text": "Deploy ready?",
+        "sender": "Alice",
+        "timestamp": 1700000000000
+      },
+      {
+        "text": "Running final tests now",
+        "sender": "Bob",
+        "timestamp": 1700000060000
+      },
+      {
+        "text": "ETA 15 minutes",
+        "sender": "Alice",
+        "timestamp": 1700000120000
+      }
+    ]
+  },
+  "actions": [
+    {
+      "id": "action_reply",
+      "label": "Reply",
+      "action": "REPLY",
+      "params": {
+        "hint": "Type a reply..."
+      }
+    }
+  ]
+}

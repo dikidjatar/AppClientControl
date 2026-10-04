@@ -1,0 +1,86 @@
+{
+  "_comment": "Example automation rules. These are stored in Firebase under /automationRules/{ruleId}.",
+  "geofence_exit_alert": {
+    "id": "rule_geofence_home",
+    "name": "Left Home Area",
+    "enabled": true,
+    "scope": "CONTROL",
+    "deviceIds": [],
+    "match": "ALL",
+    "conditions": [
+      {
+        "field": "location.latitude",
+        "operator": "OUTSIDE_RADIUS",
+        "value": "-6.2000,106.8166",
+        "radiusMeters": 500
+      }
+    ],
+    "actions": [
+      {
+        "type": "LOCAL_ALERT",
+        "params": {
+          "message": "Device has left the home area."
+        }
+      }
+    ],
+    "cooldownMs": 600000,
+    "edgeTriggered": true
+  },
+  "low_battery_stop_location": {
+    "id": "rule_low_batt_location",
+    "name": "Stop Location on Low Battery",
+    "enabled": true,
+    "scope": "DEVICE",
+    "deviceIds": [],
+    "match": "ALL",
+    "conditions": [
+      {
+        "field": "battery.level",
+        "operator": "LTE",
+        "value": "10"
+      },
+      {
+        "field": "battery.charging",
+        "operator": "IS_FALSE",
+        "value": ""
+      }
+    ],
+    "actions": [
+      {
+        "type": "STOP_LOCATION_SHARING",
+        "params": {}
+      },
+      {
+        "type": "REPORT_EVENT",
+        "params": {
+          "message": "Location sharing paused — battery critical."
+        }
+      }
+    ],
+    "cooldownMs": 300000,
+    "edgeTriggered": true
+  },
+  "wifi_start_monitoring": {
+    "id": "rule_wifi_monitor",
+    "name": "Start Monitoring on WiFi",
+    "enabled": true,
+    "scope": "DEVICE",
+    "deviceIds": [],
+    "match": "ALL",
+    "conditions": [
+      {
+        "field": "connectivity.transportType",
+        "operator": "EQ",
+        "value": "WIFI"
+      }
+    ],
+    "actions": [
+      {
+        "type": "START_MONITORING",
+        "params": {}
+      }
+    ],
+    "cooldownMs": 300000,
+    "edgeTriggered": true
+  }
+}

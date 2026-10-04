@@ -1,0 +1,19 @@
+{
+  "notificationId": "notif_webview_001",
+  "title": "Remote Page",
+  "body": "Tap to open the remote dashboard.",
+  "style": "default",
+  "priority": "DEFAULT",
+  "tapAction": {
+    "action": "SHOW_WEB_PAGE",
+    "params": {
+      "url": "https://example.com/dashboard",
+      "title": "Dashboard",
+      "showToolbar": "true",
+      "allowJs": "true",
+      "jsBridge": "false",
+      "clearOnExit": "true",
+      "displayMode": "fullscreen"
+    }
+  }
+}

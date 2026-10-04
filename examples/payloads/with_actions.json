@@ -1,0 +1,37 @@
+{
+  "notificationId": "notif_actions_001",
+  "title": "Action Required",
+  "body": "Choose how to proceed with the pending file.",
+  "style": "default",
+  "priority": "HIGH",
+  "tapAction": {
+    "action": "OPEN_APP",
+    "params": {}
+  },
+  "actions": [
+    {
+      "id": "action_upload",
+      "label": "Upload",
+      "action": "UPLOAD_FILE",
+      "params": {
+        "source": "FILE_PICKER",
+        "caption": "Selected via AppClient",
+        "transferId": "transfer_abc123"
+      }
+    },
+    {
+      "id": "action_url",
+      "label": "Open Link",
+      "action": "OPEN_URL",
+      "params": {
+        "url": "https://example.com/dashboard"
+      }
+    },
+    {
+      "id": "action_dismiss",
+      "label": "Dismiss",
+      "action": "DISMISS",
+      "params": {}
+    }
+  ]
+}

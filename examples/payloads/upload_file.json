@@ -1,0 +1,32 @@
+{
+  "notificationId": "notif_upload_001",
+  "title": "Share a File",
+  "body": "Tap 'Select File' to pick a file from your device and send it.",
+  "style": "default",
+  "priority": "HIGH",
+  "autoCancel": false,
+  "actions": [
+    {
+      "id": "action_pick_media",
+      "label": "Pick Image / Video",
+      "action": "UPLOAD_FILE",
+      "params": {
+        "source": "MEDIA_PICKER",
+        "allowMultiple": "false",
+        "caption": "Sent from device",
+        "transferId": "transfer_media_001"
+      }
+    },
+    {
+      "id": "action_pick_file",
+      "label": "Pick Any File",
+      "action": "UPLOAD_FILE",
+      "params": {
+        "source": "FILE_PICKER",
+        "allowedMime": "*/*",
+        "maxSize": "52428800",
+        "transferId": "transfer_file_001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "notificationId": "notif_download_001",
+  "title": "New File Available",
+  "body": "document.pdf (1.2 MB) — tap to save.",
+  "style": "default",
+  "priority": "HIGH",
+  "autoCancel": true,
+  "tapAction": {
+    "action": "DOWNLOAD_FILE",
+    "params": {
+      "fileId": "BQACAgIAAxkBAAIBaGX...",
+      "fileName": "document.pdf",
+      "mimeType": "application/pdf",
+      "fileSize": "1258291",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "subDir": "documents",
+      "transferId": "transfer_dl_001",
+      "autoStart": "false"
+    }
+  },
+  "actions": [
+    {
+      "id": "action_download",
+      "label": "Save to Device",
+      "action": "DOWNLOAD_FILE",
+      "params": {
+        "fileId": "BQACAgIAAxkBAAIBaGX...",
+        "fileName": "document.pdf",
+        "mimeType": "application/pdf",
+        "fileSize": "1258291",
+        "subDir": "documents",
+        "transferId": "transfer_dl_001",
+        "autoStart": "true"
+      }
+    }
+  ]
+}

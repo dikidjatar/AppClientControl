@@ -1,0 +1,11 @@
+{
+  "notificationId": "notif_hello_001",
+  "title": "Hello from AppControl",
+  "body": "This is a simple push notification delivered via FCM.",
+  "style": "default",
+  "priority": "HIGH",
+  "channelId": "fcm_default",
+  "channelName": "Remote Notification",
+  "autoCancel": true,
+  "silent": false
+}

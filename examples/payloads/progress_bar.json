@@ -1,0 +1,13 @@
+{
+  "notificationId": "notif_progress_sync",
+  "title": "Syncing Data",
+  "body": "65% complete...",
+  "style": "progress",
+  "priority": "LOW",
+  "progress": 65,
+  "progressMax": 100,
+  "indeterminate": false,
+  "ongoing": true,
+  "autoCancel": false,
+  "silent": true
+}
