@@ -22,6 +22,17 @@ command delivery) and the **Telegram Bot API** (event notifications and file sto
 
 ---
 
+## Screenshots
+
+<div style="text-align: center;">
+    <img src="/screenshots/1.jpg" alt="Screenshot 1" style="width: 24%; height: auto;">
+    <img src="/screenshots/2.jpg" alt="Screenshot 2" style="width: 24%; height: auto;">
+    <img src="/screenshots/3.jpg" alt="Screenshot 3" style="width: 24%; height: auto;">
+    <img src="/screenshots/4.jpg" alt="Screenshot 4" style="width: 24%; height: auto;">
+</div>
+
+---
+
 ## Overview
 
 | Module       | Role                                                                                                          | Package                 |
