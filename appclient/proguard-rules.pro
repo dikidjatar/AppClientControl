@@ -40,37 +40,12 @@
 #    The `shared` module is a plain Kotlin JVM library (java-library plugin)
 #    so it has no consumer ProGuard rules of its own.
 #    Firebase RTDB's Kotlin mapper uses @Metadata + constructor reflection.
--keep class com.xeg911.shared.data.model.** {
-    <init>(...);
-    <fields>;
-    public <methods>;
-}
--keep class com.xeg911.shared.data.model.usage.** {
-    <init>(...);
-    <fields>;
-    public <methods>;
-}
--keep class com.xeg911.shared.data.model.event.** {
-    <init>(...);
-    <fields>;
-    public <methods>;
-}
--keep class com.xeg911.shared.data.model.notification.** {
-    <init>(...);
-    <fields>;
-    public <methods>;
-}
--keep class com.xeg911.shared.data.model.transfer.** {
-    <init>(...);
-    <fields>;
-    public <methods>;
-}
-# AutomationRule, RuleCondition, RuleState written/read via Firebase setValueAwait
--keep class com.xeg911.shared.rules.** {
-    <init>(...);
-    <fields>;
-    public <methods>;
-}
+-keep class com.xeg911.shared.data.model.** { *; }
+-keep class com.xeg911.shared.data.model.usage.** { *; }
+-keep class com.xeg911.shared.data.model.event.** { *; }
+-keep class com.xeg911.shared.data.model.notification.** { *; }
+-keep class com.xeg911.shared.data.model.transfer.** { *; }
+-keep class com.xeg911.shared.rules.** { *; }
 
 # 4. Hilt / Dagger our own entry points
 #    Hilt ships consumer rules for its generated components, we only protect
