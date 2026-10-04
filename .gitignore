@@ -1,0 +1,62 @@
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+
+# Secrets / Credentials
+appclient/google-services.json
+appcontrol/google-services.json
+
+# Signing keystore and its properties file
+*.jks
+*.keystore
+keystore.properties
+
+# Firebase service account
+appcontrol/src/main/res/raw/service_account.json
+
+# Android Studio
+*.iml
+.idea/
+*.iws
+*.ipr
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries/
+.idea/libraries/
+.idea/caches/
+.idea/modules.xml
+.idea/navEditor.xml
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V500
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test output
+.externalNativeBuild/
+.cxx/
+
+# Proguard mapping
+**/mapping.txt
+**/seeds.txt
+**/usage.txt
+
+# APK / AAB output
+*.apk
+*.aab
+
+# Other
+/android.*
+/androidx.*
+/dagger.*
+/com.xeg911.*
+/kotlin.*
+/kotlinx.*

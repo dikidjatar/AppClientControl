@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launcher icon theme backgrounds (adaptive icons) -->
+    <color name="ic_launcher_mono_bg">#1C1C1E</color>
+    <color name="ic_launcher_shield_bg">#0F3D5C</color>
+    <color name="ic_launcher_orbit_bg">#EA580C</color>
+</resources>

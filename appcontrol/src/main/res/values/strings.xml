@@ -1,0 +1,934 @@
+<resources>
+    <string name="app_name">App Control</string>
+
+    <!-- Generic status -->
+    <string name="status_yes">Yes</string>
+    <string name="status_no">No</string>
+
+    <!-- Permissions -->
+    <string name="permission_granted">Granted</string>
+    <string name="permission_denied">Denied</string>
+
+    <string name="error_empty_email_password">Email and password cannot be empty</string>
+    <string name="login_error_invalid_credentials">Login failed, check email and password</string>
+    <string name="login_sign_in_to_continue">Sign in to continue</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="btn_login">Login</string>
+
+    <!-- Logout Confirmation Dialog -->
+    <string name="logout_dialog_title">Log Out?</string>
+    <string name="logout_dialog_message">You will be logged out of AppControl.</string>
+    <string name="logout_dialog_btn_confirm">Log Out</string>
+    <string name="logout_dialog_btn_dismiss">Cancel</string>
+
+    <!-- Online Status Labels -->
+    <string name="status_online">Online</string>
+    <string name="status_offline">Offline</string>
+    <string name="status_never_seen">Never</string>
+    <string name="status_just_now">Just now</string>
+    <string name="status_minutes_ago">%1$d min ago</string>
+    <string name="status_hours_ago">%1$d hr ago</string>
+    <string name="status_days_ago">%1$d d ago</string>
+
+    <!-- Battery -->
+    <string name="status_charging_with_source">Charging (%s)</string>
+    <string name="status_not_charging">Not charging</string>
+    <string name="status_battery_critical">⚠ Critical battery</string>
+    <string name="status_battery_last_updated">%1$d%% · last updated</string>
+
+    <!-- Transport types -->
+    <string name="transport_wifi">Wi-Fi</string>
+    <string name="transport_mobile">Mobile</string>
+    <string name="transport_ethernet">Ethernet</string>
+    <string name="transport_vpn">VPN</string>
+
+    <!-- Device list screen -->
+    <string name="device_list_empty_title">No devices registered</string>
+    <string name="device_list_empty_subtitle">Install AppClient on a device to get started</string>
+
+    <!-- Device detail screen -->
+    <string name="screen_device_detail">Device Detail</string>
+    <string name="device_load_failed">Failed to load device</string>
+
+    <!-- Detail section headers -->
+    <string name="section_status">Status</string>
+    <string name="section_device_info">Device Info</string>
+    <string name="section_battery">Battery</string>
+    <string name="section_connectivity">Connectivity</string>
+    <string name="section_hardware">Hardware</string>
+    <string name="section_permissions">Permissions</string>
+
+    <string name="device_information">Device Information</string>
+
+    <!-- Detail info row labels -->
+    <string name="label_device">Device</string>
+    <string name="label_device_id">Device ID</string>
+    <string name="label_battery">Battery</string>
+    <string name="label_network">Network</string>
+    <string name="label_last_seen">Last seen</string>
+    <string name="label_device_name">Device name</string>
+    <string name="label_brand">Brand</string>
+    <string name="label_model">Model</string>
+    <string name="label_manufacturer">Manufacturer</string>
+    <string name="label_product">Product</string>
+    <string name="label_android_version">Android</string>
+    <string name="label_sdk_int">API level</string>
+    <string name="label_app_version">App version</string>
+    <string name="label_app_version_code">Version code</string>
+    <string name="label_battery_level">Level</string>
+    <string name="label_charging_status">Charging</string>
+    <string name="label_battery_health">Health</string>
+    <string name="label_temperature">Temperature</string>
+    <string name="label_voltage">Voltage</string>
+    <string name="label_connection_type">Type</string>
+    <string name="label_ip_address">IP address</string>
+    <string name="label_ram_total">RAM total</string>
+    <string name="label_ram_available">RAM available</string>
+    <string name="label_storage_internal">Internal storage</string>
+    <string name="label_storage_external">External storage</string>
+    <string name="label_storage_free_of_total">%s free of %s</string>
+    <string name="label_display">Display</string>
+    <string name="label_cpu_abi">CPU ABI</string>
+    <string name="label_cpu_cores">CPU cores</string>
+    <string name="label_locale">Locale</string>
+    <string name="label_timezone">Timezone</string>
+    <string name="label_rooted">Rooted</string>
+
+    <string name="hardware_empty_title">Hardware data not available yet</string>
+    <string name="hardware_empty_subtitle">Make sure AppClient is running and has re-registered</string>
+
+    <string name="screen_section_title">Screen</string>
+    <string name="screen_label_resolution">Resolution</string>
+    <string name="screen_label_density">Density</string>
+    <string name="screen_label_refresh_rate">Refresh Rate</string>
+    <string name="screen_label_font_scale">Font Scale</string>
+    <string name="screen_value_resolution">%1$d × %2$d px</string>
+    <string name="screen_value_density">%1$d dpi</string>
+    <string name="screen_value_refresh_rate">%1$.0f Hz</string>
+    <string name="screen_value_font_scale">%1$.1f×</string>
+
+    <string name="processor_section_title">Processor</string>
+    <string name="processor_label_architecture">Architecture</string>
+    <string name="processor_label_core_count">Core Count</string>
+    <string name="processor_value_core_count">%1$d cores</string>
+
+    <!-- Info Section System -->
+    <string name="system_section_title">System</string>
+    <string name="system_label_locale">Locale</string>
+    <string name="system_label_timezone">Timezone</string>
+    <string name="system_label_root_status">Root Status</string>
+    <string name="system_value_rooted">⚠ Rooted</string>
+    <string name="system_value_not_rooted">Not rooted</string>
+
+    <string name="memory_section_title">Memory (RAM)</string>
+    <string name="memory_label_low_memory">Low Memory</string>
+    <string name="memory_label_low_memory_threshold">Low Memory Threshold</string>
+    <string name="memory_value_yes">⚠ Yes</string>
+    <string name="memory_value_no">No</string>
+
+    <string name="memory_text_usage_summary">%1$s used of %2$s</string>
+    <string name="memory_text_usage_detail">%1$d%% &#183; %2$s available</string>
+
+    <string name="storage_section_title">Storage</string>
+    <string name="storage_label_internal">Internal</string>
+    <string name="storage_label_external">External (SD Card)</string>
+
+    <string name="storage_text_usage_summary">%1$s used of %2$s</string>
+    <string name="storage_text_usage_detail">%1$d%% &#183; %2$s available</string>
+    <string name="storage_network_summary">%1$s used of %2$s</string>
+
+    <!-- Permissions Tab - Filter chips -->
+    <string name="perm_filter_all">All</string>
+    <string name="perm_filter_runtime">Runtime</string>
+    <string name="perm_filter_special">Special</string>
+    <string name="perm_filter_install">Install</string>
+    <string name="perm_filter_chip_label">%1$s (%2$d)</string>
+
+    <!-- Permissions Tab - Summary stats -->
+    <string name="perm_stat_total">Total</string>
+    <string name="perm_stat_granted">Granted</string>
+    <string name="perm_stat_denied">Denied</string>
+
+    <!-- Permissions Tab - Grant status chips -->
+    <string name="perm_status_granted">✓ OK</string>
+    <string name="perm_status_install_time">—</string>
+    <string name="perm_status_denied">✗ Denied</string>
+
+    <!-- Permissions Tab - Empty state -->
+    <string name="perm_empty_title">No %s permissions</string>
+    <string name="perm_empty_subtitle">Try selecting a different filter</string>
+
+    <!-- Notifications Tab - Section header -->
+    <string name="notif_section_title">Captured Notifications (%1$s)</string>
+    <string name="notif_action_clear_all">Clear All</string>
+
+    <!-- Notifications Tab - Search bar -->
+    <string name="notif_search_placeholder">Search by title, text, or source…</string>
+    <string name="notif_search_clear_cd">Clear search</string>
+
+    <!-- Notifications Tab - FAB -->
+    <string name="notif_compose_fab_cd">Send new notification</string>
+
+    <!-- Notifications Tab - Empty state -->
+    <string name="notif_empty_title">No notifications yet</string>
+    <string name="notif_empty_subtitle">AppClient will forward device notifications here</string>
+    <string name="notif_search_empty_title">No results found for \"%s\"</string>
+    <string name="notif_search_empty_subtitle">Try a different keyword</string>
+
+    <!-- Callbacks Tab - Section header -->
+    <string name="callback_section_title">Event History (%1$s)</string>
+    <string name="callback_action_clear_all">Clear All</string>
+
+    <!-- Callbacks Tab - Empty state -->
+    <string name="callback_empty_title">No events yet</string>
+    <string name="callback_empty_subtitle">Events appear when the device opens, monitoring changes, permissions change or an action runs</string>
+
+    <!-- Callbacks Tab - Card -->
+    <string name="callback_notif_id_prefix">notif: %s</string>
+    <string name="callback_data_header">Data</string>
+
+    <!-- Callbacks Tab - Content descriptions -->
+    <string name="callback_cd_expand">View data</string>
+    <string name="callback_cd_collapse">Collapse data</string>
+    <string name="callback_cd_delete">Delete event</string>
+
+    <string name="composer_title">Notification Composer</string>
+    <string name="composer_title_edit">Update Notification</string>
+
+    <!-- Generic actions -->
+    <string name="action_confirm">Confirm</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_clear_all">Clear All</string>
+
+    <!-- Device hub tabs -->
+    <string name="tab_overview">Overview</string>
+    <string name="tab_notifications">Notifications</string>
+    <string name="tab_outbox">Sent</string>
+    <string name="tab_callbacks">Events</string>
+    <string name="tab_apps">Apps</string>
+    <string name="tab_contacts">Contacts</string>
+    <string name="tab_permissions">Permissions</string>
+    <string name="tab_hardware">Hardware</string>
+    <string name="tab_capabilities">Capabilities</string>
+    <string name="tab_config">Config</string>
+    <string name="tab_coming_soon">Will be implemented in the next step</string>
+
+    <!-- Clear confirmations -->
+    <string name="confirm_clear_notifications_title">Clear captured notifications?</string>
+    <string name="confirm_clear_notifications_message">All notifications forwarded by this device will be removed from AppControl. This cannot be undone.</string>
+    <string name="confirm_clear_callbacks_title">Clear event history?</string>
+    <string name="confirm_clear_callbacks_message">All events for this device will be removed. This cannot be undone.</string>
+    <string name="confirm_clear_outbox_title">Clear sent notifications?</string>
+    <string name="confirm_clear_outbox_message">The sent history is removed from AppControl only. Notifications already shown on the device stay visible.</string>
+
+    <!-- Hub action feedback -->
+    <string name="notif_cleared">Captured notifications cleared</string>
+    <string name="callback_cleared">Event history cleared</string>
+    <string name="callback_deleted">Event deleted</string>
+    <string name="outbox_cleared">Sent history cleared</string>
+    <string name="outbox_deleted">Sent notification removed</string>
+    <string name="outbox_action_success">Done</string>
+    <string name="error_device_token_missing">Device has no FCM token registered</string>
+
+    <!-- Outbox tab -->
+    <string name="outbox_section_title">Sent Notifications (%1$d)</string>
+    <string name="outbox_empty_title">No notifications sent yet</string>
+    <string name="outbox_empty_subtitle">Use the composer to send a notification to this device</string>
+    <string name="outbox_meta">ID %1$s · sent %2$d×</string>
+    <string name="outbox_cd_edit">Edit and resend</string>
+    <string name="outbox_cd_resend">Resend</string>
+    <string name="outbox_cd_cancel">Cancel on device</string>
+    <string name="outbox_cd_delete">Remove from history</string>
+
+    <!-- Composer: send -->
+    <string name="composer_btn_send">Send to %1$d target(s)</string>
+    <string name="composer_btn_update">Update on %1$d target(s)</string>
+    <string name="composer_send_success">Sent to %1$d target(s)</string>
+    <string name="composer_send_failed">Send failed: %1$s</string>
+    <string name="composer_send_partial">Sent to %1$d of %2$d targets. Last error: %3$s</string>
+    <string name="composer_draft_not_found">Sent notification not found, starting a new one</string>
+    <string name="composer_json_copied">Payload JSON copied</string>
+
+    <!-- Composer: sections -->
+    <string name="composer_section_targets">Targets</string>
+    <string name="composer_section_targets_count">%1$d target(s) selected</string>
+    <string name="composer_section_content">Content</string>
+    <string name="composer_section_style">Style</string>
+    <string name="composer_capability_fallback">Default capabilities</string>
+    <string name="composer_section_appearance">Appearance</string>
+    <string name="composer_section_behavior">Behavior</string>
+    <string name="composer_section_grouping">Grouping &amp; Channel</string>
+    <string name="composer_section_tap_action">Tap Action</string>
+    <string name="composer_section_tap_action_hint">What happens when the notification body is tapped</string>
+    <string name="composer_section_actions">Action Buttons</string>
+    <string name="composer_section_actions_count">%1$d of %2$d buttons</string>
+    <string name="composer_section_extras">Extras</string>
+    <string name="composer_section_lifecycle">Lifecycle</string>
+    <string name="composer_section_preview">Payload Preview</string>
+    <string name="composer_preview_hint">JSON placed in the FCM data key \"payload\"</string>
+    <string name="composer_cd_copy_json">Copy JSON</string>
+
+    <!-- Composer: targets -->
+    <string name="composer_target_devices">Registered devices</string>
+    <string name="composer_target_no_devices">No devices registered yet</string>
+    <string name="composer_target_missing_token_hint">Greyed-out devices have not registered an FCM token yet</string>
+    <string name="composer_target_manual_token">FCM token (manual)</string>
+    <string name="composer_target_add_token_cd">Add token</string>
+
+    <!-- Composer: fields -->
+    <string name="composer_field_notification_id">Notification ID</string>
+    <string name="composer_hint_id">Sending the same ID again updates the notification on the device</string>
+    <string name="composer_hint_id_edit">Sending updates the existing notification in place</string>
+    <string name="composer_cd_regenerate_id">Generate new ID</string>
+    <string name="composer_field_title">Title</string>
+    <string name="composer_field_body">Body</string>
+    <string name="composer_field_big_text">Big text</string>
+    <string name="composer_field_summary_text">Summary text</string>
+    <string name="composer_field_image">Image URL</string>
+    <string name="composer_hint_url">https://…</string>
+    <string name="composer_field_progress">Progress</string>
+    <string name="composer_field_progress_max">Progress max</string>
+    <string name="composer_field_indeterminate">Indeterminate progress</string>
+    <string name="composer_field_icon">Small icon</string>
+    <string name="composer_field_large_icon">Large icon</string>
+    <string name="composer_hint_image_source">Drawable name, URL, or base64</string>
+    <string name="composer_field_color">Accent color</string>
+    <string name="composer_field_ticker">Ticker</string>
+    <string name="composer_field_sub_text">Sub text</string>
+    <string name="composer_field_priority">Priority</string>
+    <string name="composer_field_visibility">Visibility</string>
+    <string name="composer_field_auto_cancel">Auto cancel on tap</string>
+    <string name="composer_field_ongoing">Ongoing (not swipeable)</string>
+    <string name="composer_field_silent">Silent</string>
+    <string name="composer_field_local_only">Local only</string>
+    <string name="composer_field_start_monitoring">Start monitoring service</string>
+    <string name="composer_hint_start_monitoring">Also adds the startMonitoring FCM data key</string>
+    <string name="composer_field_timestamp">Timestamp (epoch ms)</string>
+    <string name="composer_field_badge">Badge count</string>
+    <string name="composer_field_group">Group key</string>
+    <string name="composer_field_sort_key">Sort key</string>
+    <string name="composer_field_group_summary">Group summary</string>
+    <string name="composer_field_channel_id">Channel ID</string>
+    <string name="composer_field_channel_name">Channel name</string>
+    <string name="composer_field_expires_at">Expires at (epoch ms)</string>
+    <string name="composer_field_cancel_after">Cancel after (ms)</string>
+    <string name="composer_field_cancel_ids">Cancel IDs</string>
+    <string name="composer_hint_cancel_ids">Comma-separated notification IDs to cancel before showing</string>
+    <string name="composer_field_semantic">Semantic</string>
+    <string name="composer_field_tap_enabled">Custom tap action</string>
+
+    <!-- Composer: key/value editor -->
+    <string name="composer_add_entry">Add entry</string>
+    <string name="composer_key">Key</string>
+    <string name="composer_key_required">Key (required)</string>
+    <string name="composer_value">Value</string>
+    <string name="composer_cd_remove">Remove</string>
+
+    <!-- Composer: action picker & editor -->
+    <string name="composer_pick_action">Choose action</string>
+    <string name="composer_required_params">Required: %1$s</string>
+    <string name="composer_optional_params">Optional: %1$s</string>
+    <string name="composer_action_n">Button %1$d</string>
+    <string name="composer_add_action">Add action button</string>
+    <string name="composer_field_action_label">Label</string>
+    <string name="composer_field_action_id">Action ID</string>
+    <string name="composer_field_action_icon">Icon</string>
+    <string name="composer_field_allow_replies">Allow generated replies</string>
+    <string name="composer_params">Params</string>
+    <string name="composer_params_empty">No params for this action</string>
+    <string name="composer_extras_empty">No extras</string>
+
+    <!-- Composer: messaging style -->
+    <string name="composer_field_sender_name">Sender name</string>
+    <string name="composer_field_conversation_title">Conversation title</string>
+    <string name="composer_field_sender_avatar">Sender avatar</string>
+    <string name="composer_field_source_badge">Source badge</string>
+    <string name="composer_field_group_conversation">Group conversation</string>
+    <string name="composer_messages">Messages (%1$d)</string>
+    <string name="composer_add_message">Add message</string>
+    <string name="composer_message_n">Message %1$d</string>
+    <string name="composer_field_message_text">Message text</string>
+
+    <!-- Composer: validation -->
+    <string name="composer_error_no_target">Select at least one target device or token</string>
+    <string name="composer_error_id_required">Notification ID is required</string>
+    <string name="composer_error_content_required">Provide a title, body, or at least one message</string>
+    <string name="composer_error_color_format">Color must be #RRGGBB or #AARRGGBB</string>
+    <string name="composer_error_numeric">%1$s must be a number</string>
+    <string name="composer_error_tap_param_required">Tap action param \"%1$s\" is required</string>
+    <string name="composer_error_too_many_actions">Android supports at most %1$d action buttons</string>
+    <string name="composer_error_action_type">Button %1$d: choose an action</string>
+    <string name="composer_error_action_label">Button %1$d: label is required</string>
+    <string name="composer_error_action_param_required">Button %1$d: param \"%2$s\" is required</string>
+
+    <!-- Generic -->
+    <string name="action_save">Save</string>
+
+    <!-- Templates -->
+    <string name="template_cd_save">Save as template</string>
+    <string name="template_cd_load">Load template</string>
+    <string name="template_cd_delete">Delete template</string>
+    <string name="template_save_title">Save as template</string>
+    <string name="template_save_hint">Saving with an existing name replaces that template</string>
+    <string name="template_name">Template name</string>
+    <string name="template_pick_title">Templates</string>
+    <string name="template_empty">No templates yet. Fill the composer and tap the save icon to create one.</string>
+    <string name="template_meta">%1$d action(s) · updated %2$s</string>
+    <string name="template_saved">Template \"%1$s\" saved</string>
+    <string name="template_loaded">Template \"%1$s\" loaded</string>
+
+    <!-- Outbox: linked callbacks -->
+    <string name="outbox_callbacks_count">Callbacks (%1$d)</string>
+
+    <!-- Capabilities tab -->
+    <string name="capability_empty_title">No capabilities reported</string>
+    <string name="capability_empty_subtitle">AppClient writes its capabilities at registration and on token refresh</string>
+    <string name="capability_schema_version">Schema</string>
+    <string name="capability_updated">Updated</string>
+    <string name="capability_stale_hint">Older than 7 days — token may be stale</string>
+    <string name="capability_fcm_token">FCM token</string>
+    <string name="capability_token_missing">No token registered</string>
+    <string name="capability_cd_copy_token">Copy token</string>
+    <string name="capability_token_copied">FCM token copied</string>
+    <string name="capability_styles_title">Supported Styles (%1$d)</string>
+    <string name="capability_actions_title">Supported Actions (%1$d)</string>
+
+    <!-- Config tab -->
+    <string name="config_saved">Config saved</string>
+    <string name="config_webview_title">WebView</string>
+    <string name="config_webview_subtitle">URL opened by AppClient\'s in-app WebView</string>
+    <string name="config_webview_url">WebView URL</string>
+    <string name="config_telegram_notification_title">Telegram · Notifications</string>
+    <string name="config_telegram_storage_title">Telegram · Storage</string>
+    <string name="config_telegram_subtitle">config/telegram/%1$s</string>
+    <string name="config_telegram_enabled">Enabled</string>
+    <string name="config_telegram_bot_token">Bot token</string>
+    <string name="config_telegram_chat_id">Chat ID</string>
+    <string name="config_cd_toggle_token">Toggle token visibility</string>
+    <string name="config_status_ready">Ready</string>
+    <string name="config_status_inactive">Inactive</string>
+
+    <!-- Apps tab -->
+    <string name="apps_section_title">Installed Apps (%1$s)</string>
+    <string name="apps_search_placeholder">Search by app name…</string>
+    <string name="apps_pick_hint">Tap a row to prepare it in the Composer · Send opens the app on the device right away</string>
+    <string name="apps_empty_title">No apps synced</string>
+    <string name="apps_empty_subtitle">AppClient uploads installed apps during registration</string>
+    <string name="apps_meta">v%1$s (%2$d) · updated %3$s</string>
+    <string name="apps_cd_copy_package">Copy package name</string>
+    <string name="apps_cd_pick_action">Use in composer</string>
+    <string name="apps_package_copied">Package name copied</string>
+
+    <!-- Contacts tab -->
+    <string name="contacts_section_title">Contacts (%1$s)</string>
+    <string name="contacts_search_placeholder">Search by name…</string>
+    <string name="contacts_empty_title">No contacts synced</string>
+    <string name="contacts_empty_subtitle">AppClient uploads contacts when the permission is granted</string>
+    <string name="contacts_unnamed">Unnamed contact</string>
+    <string name="contacts_no_number">No phone number</string>
+    <string name="contacts_cd_copy_number">Copy number</string>
+    <string name="contacts_number_copied">Copied %1$s</string>
+
+    <!-- Composer: app picker -->
+    <string name="composer_pick_app_title">Pick an installed app</string>
+    <string name="composer_cd_pick_app">Pick from device apps</string>
+
+    <!-- Composer: permission preset -->
+    <string name="composer_preset_permission_title">Permission required</string>
+    <string name="composer_preset_permission_rationale">AppClient needs the %1$s permission to keep working properly. Tap the button to grant it.</string>
+    <string name="composer_preset_permission_button">Grant permission</string>
+
+    <!-- Generic actions (extended) -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Offline / connectivity banner -->
+    <string name="offline_banner_title">You are offline</string>
+    <string name="offline_banner_message">Device data may be outdated. Changes will sync once the connection is restored.</string>
+    <string name="offline_banner_db_title">Reconnecting to Firebase…</string>
+    <string name="offline_banner_db_message">Internet is available but the Realtime Database is not reachable yet.</string>
+
+    <!-- Overview: extra sections -->
+    <string name="overview_section_appclient">AppClient</string>
+    <string name="overview_section_configuration">Configuration</string>
+    <string name="overview_section_wallpaper">Wallpaper</string>
+    <string name="overview_label_registered_seen">Info updated</string>
+    <string name="overview_label_wallpaper_size">Size</string>
+    <string name="overview_label_wallpaper_captured">Captured</string>
+
+    <!-- Monitoring / AppClient status -->
+    <string name="monitoring_section_title">AppClient Status</string>
+    <string name="monitoring_label_presence">Connection</string>
+    <string name="monitoring_label_foreground">App state</string>
+    <string name="monitoring_label_service">Monitoring service</string>
+    <string name="monitoring_label_heartbeat">Heartbeat</string>
+    <string name="monitoring_label_network">Network</string>
+    <string name="monitoring_label_network_updated">Network updated</string>
+    <string name="monitoring_label_ping_latency">Ping</string>
+    <string name="monitoring_value_foreground">Foreground</string>
+    <string name="monitoring_value_background">Background</string>
+    <string name="monitoring_value_running">Running</string>
+    <string name="monitoring_value_stale">Stale</string>
+    <string name="monitoring_value_stopped">Stopped</string>
+    <string name="monitoring_heartbeat_fresh">Fresh</string>
+    <string name="monitoring_heartbeat_stale">Overdue</string>
+    <string name="monitoring_heartbeat_none">Never</string>
+    <string name="monitoring_chip_running">Monitoring ON</string>
+    <string name="monitoring_chip_stale">Monitoring stale</string>
+    <string name="monitoring_chip_stopped">Monitoring OFF</string>
+    <string name="monitoring_detail_last_seen">Last seen %1$s</string>
+    <string name="monitoring_detail_opened">Opened %1$s</string>
+    <string name="monitoring_detail_closed">Closed %1$s</string>
+    <string name="monitoring_detail_heartbeat">Last heartbeat %1$s</string>
+    <string name="monitoring_detail_heartbeat_interval">Expected every %1$s</string>
+    <string name="monitoring_ping_waiting">Waiting for response…</string>
+    <string name="monitoring_ping_result">%1$d ms · %2$s</string>
+    <string name="monitoring_ping_sent">Ping sent</string>
+    <string name="monitoring_ping_timeout">No ping response — device may be offline</string>
+    <string name="monitoring_action_ping">Ping</string>
+    <string name="monitoring_action_start">Start monitoring</string>
+    <string name="monitoring_start_sent">Start command sent via FCM</string>
+    <string name="monitoring_actions_hint">Ping measures the Realtime Database round trip. Start monitoring sends a silent FCM that (re)starts the foreground service.</string>
+
+    <!-- Notifications tab (extended) -->
+    <string name="notif_deleted">Notification removed</string>
+    <string name="notif_stat_total">Total</string>
+    <string name="notif_stat_today">Today</string>
+    <string name="notif_stat_sources">Sources</string>
+    <string name="notif_day_today">Today</string>
+    <string name="notif_day_yesterday">Yesterday</string>
+    <string name="notif_cd_delete">Delete notification</string>
+    <string name="notif_no_title">(no title)</string>
+    <string name="notif_no_text">(no text)</string>
+    <string name="notif_label_package">Package</string>
+    <string name="notif_label_source">Source</string>
+    <string name="notif_label_id">ID</string>
+    <string name="notif_action_copy_text">Copy text</string>
+    <string name="notif_action_copy_all">Copy details</string>
+    <string name="notif_action_share">Share</string>
+    <string name="notif_action_compose_app">Compose for app</string>
+    <string name="notif_copied_text">Notification text copied</string>
+    <string name="notif_copied_all">Notification details copied</string>
+
+    <!-- Permissions tab (extended) -->
+    <string name="perm_action_request">Request</string>
+    <string name="perm_request_hint">%1$d permission(s) not granted. Tap Request to send a notification that asks AppClient to grant it.</string>
+
+    <!-- Notification filter config -->
+    <string name="filter_screen_title">Notification Filters</string>
+    <string name="filter_section_title">Sources (%1$d of %2$d enabled)</string>
+    <string name="filter_section_hint">Shared by every AppClient. Only notifications from enabled sources are captured and forwarded.</string>
+    <string name="filter_add_source">Add source</string>
+    <string name="filter_empty_title">No sources configured</string>
+    <string name="filter_empty_subtitle">AppClient captures nothing until at least one source is enabled</string>
+    <string name="filter_status_enabled">Enabled</string>
+    <string name="filter_status_disabled">Disabled</string>
+    <string name="filter_default_sms">Default SMS app</string>
+    <string name="filter_packages_count">%1$d package(s)</string>
+    <string name="filter_noise_count">%1$d noise pattern(s)</string>
+    <string name="filter_cd_edit">Edit source</string>
+    <string name="filter_cd_delete">Delete source</string>
+    <string name="filter_editor_title_new">New source</string>
+    <string name="filter_editor_title_edit">Edit source</string>
+    <string name="filter_field_label">Label</string>
+    <string name="filter_hint_label">e.g. WhatsApp</string>
+    <string name="filter_field_id">Source ID</string>
+    <string name="filter_hint_id_new">Generated from the label; used as the Firebase key</string>
+    <string name="filter_hint_id_locked">The ID cannot be changed after creation</string>
+    <string name="filter_error_id_taken">A source with this ID already exists</string>
+    <string name="filter_field_header_emoji">Header emoji</string>
+    <string name="filter_field_from_emoji">Sender emoji</string>
+    <string name="filter_field_enabled">Enabled</string>
+    <string name="filter_field_default_sms">Match the default SMS app</string>
+    <string name="filter_hint_default_sms">Uses whichever app handles SMS on the device instead of a package list</string>
+    <string name="filter_field_packages">Packages</string>
+    <string name="filter_hint_packages">com.example.app</string>
+    <string name="filter_field_noise">Noise patterns</string>
+    <string name="filter_hint_noise">Text to ignore (regex allowed)</string>
+    <string name="filter_error_invalid">Label, ID and at least one package (or default SMS) are required</string>
+    <string name="filter_saved">Source saved</string>
+    <string name="filter_deleted">Source deleted</string>
+    <string name="filter_enabled_msg">Source enabled</string>
+    <string name="filter_disabled_msg">Source disabled</string>
+    <string name="filter_confirm_delete_title">Delete \"%1$s\"?</string>
+    <string name="filter_confirm_delete_message">Every AppClient will stop capturing notifications from this source immediately.</string>
+    <!-- Location sharing (Device Hub → Location tab) -->
+    <string name="tab_location">Location</string>
+    <string name="location_section_status">Location sharing</string>
+    <string name="location_label_sharing">Sharing</string>
+    <string name="location_label_consent">User consent</string>
+    <string name="location_label_permission">Permission</string>
+    <string name="location_label_gps">Device location (GPS)</string>
+    <string name="location_label_interval">Update interval</string>
+    <string name="location_label_last_update">Last update</string>
+    <string name="location_label_last_error">Last error</string>
+    <string name="location_state_active">Active</string>
+    <string name="location_state_starting">Starting</string>
+    <string name="location_state_gps_off">GPS off</string>
+    <string name="location_state_permission">No permission</string>
+    <string name="location_state_disabled">Disabled</string>
+    <string name="location_hint_active">The user enabled sharing; the device publishes fixes in the background</string>
+    <string name="location_hint_starting">Consent given, waiting for the foreground service to start</string>
+    <string name="location_hint_gps_off">Consent given, but location services are turned off on the device</string>
+    <string name="location_hint_permission">Consent given, but the location permission is missing or revoked</string>
+    <string name="location_hint_disabled">The user has not enabled location sharing (or stopped it)</string>
+    <string name="location_value_given">Given</string>
+    <string name="location_value_not_given">Not given</string>
+    <string name="location_detail_consent_at">Accepted %1$s</string>
+    <string name="location_value_permission_always">Allowed all the time</string>
+    <string name="location_value_permission_in_use">Only while in use</string>
+    <string name="location_value_permission_none">Not granted</string>
+    <string name="location_value_gps_on">On</string>
+    <string name="location_value_gps_off">Off</string>
+    <string name="location_action_request">Request location</string>
+    <string name="location_action_ask_enable">Ask to enable</string>
+    <string name="location_actions_hint">Request location asks the running sharing service for a fresh fix. Ask to enable sends a notification; the user must accept the consent dialog on the device before anything is shared.</string>
+    <string name="location_request_sent">Location request sent, waiting for the device…</string>
+    <string name="location_request_timeout">No location received. Is sharing active on the device?</string>
+    <string name="location_ask_sent">Consent request sent to the device</string>
+    <string name="location_ask_notification_title">Share your location?</string>
+    <string name="location_ask_notification_body">AppControl would like to see this device\'s location. Tap to review what is shared and decide.</string>
+    <string name="location_ask_notification_action">Review &amp; enable</string>
+    <string name="location_latest_title">Latest position</string>
+    <string name="location_waiting_for_fix">Waiting for a fresh fix…</string>
+    <string name="location_detail_fixed_at">Fixed %1$s · %2$s</string>
+    <string name="location_label_accuracy">Accuracy</string>
+    <string name="location_label_altitude">Altitude</string>
+    <string name="location_label_speed">Speed</string>
+    <string name="location_label_bearing">Bearing</string>
+    <string name="location_label_provider">Provider</string>
+    <string name="location_value_meters">±%1$d m</string>
+    <string name="location_value_kmh">%1$.1f km/h</string>
+    <string name="location_value_degrees">%1$d°</string>
+    <string name="location_action_open_maps">Open in Google Maps</string>
+    <string name="location_coordinates_copied">Coordinates copied</string>
+    <string name="location_source_periodic">Periodic</string>
+    <string name="location_source_on_demand">On demand</string>
+    <string name="location_history_title">History (%1$d of %2$d)</string>
+    <string name="location_empty_title">No location yet</string>
+    <string name="location_empty_subtitle">A position appears here once the user enables sharing on the device</string>
+    <string name="location_chip_active">Location: sharing</string>
+    <string name="location_chip_pending">Location: pending</string>
+    <string name="location_chip_off">Location: off</string>
+
+    <!-- Location sharing (Config tab) -->
+    <string name="config_location_title">Location update interval</string>
+    <string name="config_location_subtitle">How often AppClient publishes a fix while the user has sharing enabled</string>
+    <string name="config_location_interval">Interval</string>
+    <string name="config_location_preset_minutes">%1$d min</string>
+    <string name="config_location_hint">Applied live on the device; shorter intervals use more battery. Minimum is 30 seconds.</string>
+
+    <!-- Files tab (push & pull) -->
+    <string name="tab_files">Files</string>
+    <string name="files_push_section">Push file to device</string>
+    <string name="files_pull_section">Request file from device</string>
+    <string name="files_received_section">Received files (%1$d)</string>
+    <string name="files_received_empty">Files uploaded by the device through an UPLOAD_FILE action appear here.</string>
+    <string name="files_storage_not_configured">Telegram Storage is not configured for this device. Enable the \"storage\" bot in the Config tab before transferring files.</string>
+    <string name="files_choose_file">Choose file</string>
+    <string name="files_cd_clear_file">Remove selected file</string>
+    <string name="files_push_too_large">AppClient can only download files up to 20 MB (Telegram Bot API limit).</string>
+    <string name="files_notification_title">Notification title</string>
+    <string name="files_push_default_title">Incoming file</string>
+    <string name="files_sub_dir">Target sub-folder (optional)</string>
+    <string name="files_sub_dir_hint">Saved under Downloads/AppClient/&lt;sub-folder&gt;</string>
+    <string name="files_auto_start">Download automatically</string>
+    <string name="files_auto_start_hint">Starts the download when the message arrives; otherwise the user taps \"Download\".</string>
+    <string name="files_push_button">Upload &amp; send</string>
+    <string name="files_push_sent">%1$s uploaded and sent to the device</string>
+    <string name="files_transfer_cancelled">Transfer cancelled</string>
+    <string name="files_input_source">Input source on device</string>
+    <string name="files_direct_uri">URI (content:// or file://)</string>
+    <string name="files_direct_uri_hint">Uploaded without opening a picker. Separate multiple URIs with commas.</string>
+    <string name="files_allowed_mime">Allowed MIME types</string>
+    <string name="files_allow_multiple">Allow multiple files</string>
+    <string name="files_button_label">Action button label</string>
+    <string name="files_pull_default_title">File requested</string>
+    <string name="files_pull_default_button">Select file</string>
+    <string name="files_pull_button">Send request</string>
+    <string name="files_pull_sending">Sending…</string>
+    <string name="files_pull_request_sent">Request sent; the uploaded file will appear under Received files</string>
+    <string name="files_received_too_large">Larger than 20 MB: cannot be downloaded through the Bot API. Use the Telegram chat instead.</string>
+    <string name="files_download">Download</string>
+    <string name="files_open">Open</string>
+    <string name="files_share">Share</string>
+    <string name="files_copy_file_id">Copy file_id</string>
+    <string name="files_file_id_copied">file_id copied</string>
+    <string name="files_download_saved">%1$s saved to Downloads/AppControl</string>
+    <string name="files_phase_uploading">Uploading</string>
+    <string name="files_phase_downloading">Downloading</string>
+    <string name="files_phase_notifying">Notifying device</string>
+    <string name="files_status_done">DONE</string>
+    <!-- Common -->
+    <string name="action_retry">Retry</string>
+    <string name="cd_navigate_back">Navigate back</string>
+
+    <!-- Home dashboard -->
+    <string name="home_section_tools">Tools</string>
+    <string name="home_all_tools">All tools</string>
+    <string name="home_section_overview">Overview</string>
+    <string name="home_metric_online">Devices online</string>
+    <string name="home_metric_online_hint">Connected right now</string>
+    <string name="home_metric_required">Required permissions</string>
+    <string name="home_metric_required_none">None required</string>
+    <string name="home_alert_all_good">Everything looks fine</string>
+    <string name="home_alert_all_good_hint">All devices are online, monitored and charged.</string>
+    <string name="home_alert_offline_title">%1$d devices offline</string>
+    <string name="home_alert_offline_message">Device is offline. Last state shown is from its last connection.</string>
+    <string name="home_alert_monitoring_title">%1$d devices need monitoring</string>
+    <string name="home_alert_monitoring_message">Monitoring is stopped or stale. Open the device to restart it.</string>
+    <string name="home_alert_battery_title">%1$d devices low on battery</string>
+    <string name="home_alert_battery_message">Battery is at 20% or less and not charging.</string>
+    <string name="home_section_devices">Devices (%1$d)</string>
+    <string name="home_view_all_devices">View all</string>
+    <string name="home_section_recent_files">Recent files</string>
+    <string name="home_view_history">History</string>
+
+    <!-- Tools -->
+    <string name="tool_composer">Notification Composer</string>
+    <string name="tool_composer_desc">Build and send rich notifications to one or many devices.</string>
+    <string name="tool_filters">Notification Filter</string>
+    <string name="tool_filters_desc">Choose which apps AppClient forwards notifications from.</string>
+    <string name="tool_files">Push &amp; Pull File</string>
+    <string name="tool_files_desc">Send files to a device or request files from it.</string>
+    <string name="tool_history">Transfer History</string>
+    <string name="tool_history_desc">Files received from devices: reopen, share or download again.</string>
+    <string name="tool_default_config">Default Config</string>
+    <string name="tool_default_config_desc">Global WebView URL and location interval inherited by new devices.</string>
+    <string name="tool_required_permissions">Required Permissions</string>
+    <string name="tool_required_permissions_desc">Permissions AppClient must have before it opens the WebView.</string>
+    <string name="tool_settings">Settings</string>
+    <string name="tool_settings_desc">Appearance and app preferences.</string>
+
+    <!-- Device list -->
+    <string name="device_list_title">Devices (%1$d)</string>
+    <string name="device_list_search_hint">Search by name, brand or model</string>
+    <string name="device_list_no_match">No device matches your search.</string>
+
+    <!-- Files -->
+    <string name="files_tab_push">Push</string>
+    <string name="files_tab_pull">Pull</string>
+    <string name="files_tab_received">Received (%1$d)</string>
+    <string name="files_push_subtitle">Uploads through Telegram Storage, then notifies the device.</string>
+    <string name="files_pull_subtitle">Asks the device user to pick and upload files.</string>
+    <string name="files_received_empty_title">No files received yet</string>
+    <string name="files_open_failed">No app can open this file type.</string>
+
+    <!-- Transfer history -->
+    <string name="history_empty_title">No transfer history</string>
+    <string name="history_empty_subtitle">Files you download from a device are recorded here.</string>
+    <string name="history_no_match">Nothing matches the current filter.</string>
+    <string name="history_filter_all">All devices</string>
+    <string name="history_filter_missing">Missing (%1$d)</string>
+    <string name="history_count">%1$d files</string>
+    <string name="history_file_missing">File no longer on this phone</string>
+    <string name="history_redownload">Download again</string>
+    <string name="history_entry_removed">Entry removed</string>
+    <string name="history_clear_title">Clear history?</string>
+    <string name="history_clear_message">All history entries are removed. Files already saved to Downloads are kept.</string>
+    <string name="history_cleared">History cleared</string>
+
+    <!-- Settings -->
+    <string name="settings_theme_title">Appearance</string>
+    <string name="settings_theme_subtitle">Choose how AppControl looks.</string>
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+
+    <!-- Default config -->
+    <string name="default_config_hint">Values stored in /defaultConfig. New devices copy the URL and interval on registration; the required permissions are inherited live unless a device overrides them.</string>
+    <string name="default_config_webview_subtitle">Page shown by AppClient when no device URL is set</string>
+    <string name="default_config_location_subtitle">Location update interval for new devices</string>
+
+    <!-- Required permissions -->
+    <string name="req_perm_notifications">Notifications</string>
+    <string name="req_perm_contacts">Contacts</string>
+    <string name="req_perm_storage_read">Read storage</string>
+    <string name="req_perm_all_files">All files access</string>
+    <string name="req_perm_listener">Notification access</string>
+    <string name="req_perm_battery">Battery optimization</string>
+    <string name="req_perm_location">Location</string>
+    <string name="req_perm_special">Special</string>
+    <string name="req_perm_default_title">Global default</string>
+    <string name="req_perm_default_subtitle">Applies to every device without an override</string>
+    <string name="req_perm_devices_section">Per-device overrides</string>
+    <string name="req_perm_inherits">Inherits the global default</string>
+    <string name="req_perm_overridden">Uses its own list</string>
+    <string name="req_perm_chip_default">Default</string>
+    <string name="req_perm_chip_custom">Custom</string>
+    <string name="req_perm_use_override">Override for this device</string>
+    <string name="req_perm_none_warning">With no required permission AppClient opens the WebView immediately.</string>
+    <string name="req_perm_saved">Required permissions saved</string>
+    <!-- Templates -->
+    <string name="tool_templates">Templates</string>
+    <string name="tool_templates_desc">Browse, rename, duplicate and edit saved notification templates.</string>
+    <string name="templates_empty_title">No templates</string>
+    <string name="templates_search_hint">Search templates</string>
+    <string name="templates_no_match">No template matches your search.</string>
+    <string name="templates_edit">Edit</string>
+    <string name="templates_rename">Rename</string>
+    <string name="templates_duplicate">Duplicate</string>
+    <string name="templates_delete_title">Delete template?</string>
+    <string name="templates_delete_message">\"%1$s\" will be removed for all AppControl users.</string>
+    <string name="templates_renamed">Template renamed to \"%1$s\"</string>
+    <string name="templates_duplicated">Template \"%1$s\" created</string>
+    <string name="templates_deleted">Template \"%1$s\" deleted</string>
+    <string name="templates_name_taken">A template named \"%1$s\" already exists</string>
+
+    <!-- Home permission alerts -->
+    <string name="home_alert_permission_title">%1$d devices missing required permissions</string>
+    <string name="home_alert_permission_message">Missing: %1$s. AppClient is blocked on its setup screen.</string>
+    <string name="home_alert_permission_message_generic">Required permissions were revoked. Open the device to review.</string>
+
+    <!-- History search -->
+    <string name="history_search_hint">Search by file name, device or type</string>
+
+    <!-- Location place (Nominatim) -->
+    <string name="location_place_title">Address</string>
+    <string name="location_place_refresh">Look up again</string>
+    <string name="location_place_loading">Looking up the address…</string>
+    <string name="location_place_error">Address lookup failed: %1$s</string>
+    <string name="location_place_osm">OpenStreetMap</string>
+    <string name="location_place_attribution">Data © OpenStreetMap contributors</string>
+
+    <!-- Batched lists -->
+    <string name="paged_search_empty_subtitle">Search matches the beginning of a name. Try a different prefix.</string>
+    <string name="paged_load_more">Load more</string>
+
+    <!-- Apps tab: direct send -->
+    <string name="apps_action_send">Send</string>
+    <string name="apps_send_body">Tap to open %1$s</string>
+    <string name="apps_send_success">Notification for %1$s sent</string>
+
+    <!-- Settings: app icon -->
+    <string name="settings_icon_title">App icon</string>
+    <string name="settings_icon_subtitle">Choose how AppControl appears on the home screen.</string>
+    <string name="settings_icon_default">Default</string>
+    <string name="settings_icon_terminal">Terminal</string>
+    <string name="settings_icon_radar">Radar</string>
+    <string name="settings_icon_hex">Hex</string>
+    <string name="settings_icon_hint">The launcher refreshes its shortcut after the switch; some launchers close the app briefly.</string>
+    <string name="settings_icon_applied">App icon updated</string>
+
+    <!-- Device config: AppClient icon -->
+    <string name="config_icon_title">AppClient icon</string>
+    <string name="config_icon_subtitle">Launcher icon shown on the device</string>
+    <string name="config_icon_hint">Sent as a silent SET_APP_ICON command; the device applies it on receipt and reports back in Callbacks.</string>
+    <string name="config_icon_apply">Apply on device</string>
+    <string name="config_icon_sent">Icon “%1$s” sent to device</string>
+
+    <!-- Composer: icon style picker -->
+    <string name="composer_pick_icon_style">Choose icon style</string>
+
+    <!-- Templates: create / import / export -->
+    <string name="templates_new">New template</string>
+    <string name="templates_import">Import</string>
+    <string name="templates_import_text">Import from JSON text</string>
+    <string name="templates_import_file">Import from JSON file</string>
+    <string name="templates_export_file">Export to JSON file</string>
+    <string name="templates_export_share">Share as JSON</string>
+    <string name="templates_transfer_cd">Import or export templates</string>
+    <string name="templates_import_json_label">JSON</string>
+    <string name="templates_import_json_hint">Paste an exported bundle, a template array, a single template or a raw payload.</string>
+    <string name="templates_imported">Imported %1$d template(s), %2$d replaced</string>
+    <string name="templates_import_failed">Import failed: %1$s</string>
+    <string name="templates_exported">Exported %1$d template(s)</string>
+    <string name="templates_defaults_seeded">%1$d default templates added</string>
+
+    <!-- Composer: action-aware options -->
+    <string name="composer_field_cancel_only">Cancel only</string>
+    <string name="composer_hint_cancel_only">Only cancels this id and the cancel ids; nothing is displayed on the device.</string>
+    <string name="composer_cancel_only_notice">Cancel-only payload: the device removes the notification with this id without showing anything.</string>
+    <string name="composer_pick_permission_title">Choose a permission</string>
+    <string name="composer_pick_permission_search">Search or type a permission name</string>
+    <string name="composer_pick_use_typed">Use typed value</string>
+    <string name="composer_pick_boolean_title">Value for %1$s</string>
+    <string name="composer_pick_app_search">Search apps or type a package name</string>
+    <string name="composer_pick_app_empty">No app inventory for the selected devices yet. Type a package name and confirm.</string>
+    <string name="composer_cd_pick_value">Pick a value</string>
+
+    <!-- Notification preview mock-up -->
+    <string name="preview_now">now</string>
+    <string name="preview_cancel_only">Cancel-only payload: nothing is shown on the device.</string>
+    <string name="preview_tap_action">Tap: %1$s</string>
+    <string name="composer_section_preview_hint">How it will look on the device, plus the raw payload</string>
+
+    <!-- Permission picker sections -->
+    <string name="composer_pick_permission_missing">Missing on target device(s)</string>
+    <string name="composer_pick_permission_common">Other permissions</string>
+    <string name="composer_pick_permission_none_missing">No missing permissions reported by the selected devices yet.</string>
+    <string name="composer_pick_permission_missing_badge">missing</string>
+    <string name="composer_pick_permission_missing_count">%1$d/%2$d devices</string>
+
+    <!-- Usage stats -->
+    <string name="tab_usage">Usage</string>
+    <string name="usage_section_title">App usage (%1$s)</string>
+    <string name="usage_empty_title">No usage data yet</string>
+    <string name="usage_empty_subtitle">The device syncs UsageStats while monitoring runs and usage collection is enabled.</string>
+    <string name="usage_empty_permission">Usage access is not granted on the device. Request PACKAGE_USAGE_STATS from the Permissions tab.</string>
+    <string name="usage_total_screen_time">Screen time</string>
+    <string name="usage_apps_used">Apps used</string>
+    <string name="usage_unlocks">Unlocks</string>
+    <string name="usage_window_hint">Last %1$s window · synced %2$s</string>
+    <string name="usage_entry_meta">%1$d launches · last used %2$s</string>
+    <string name="config_usage_title">Usage stats</string>
+    <string name="config_usage_subtitle">How often the device syncs per-app usage (UsageStatsManager). Off disables collection.</string>
+    <string name="config_usage_interval">Sync interval</string>
+    <string name="config_usage_off">Off</string>
+    <string name="req_perm_usage_stats">Usage access</string>
+    <string name="outbox_callbacks_show">Callbacks</string>
+
+    <!-- Automation rules -->
+    <string name="tool_rules">Automation</string>
+    <string name="tool_rules_desc">Rules that react to device state: battery, geofence, status and more.</string>
+    <string name="rules_title">Automation rules</string>
+    <string name="rules_new">New rule</string>
+    <string name="rules_edit">Edit rule</string>
+    <string name="rules_empty_title">No rules yet</string>
+    <string name="rules_empty_subtitle">Create a rule to run commands automatically when a device state matches.</string>
+    <string name="rules_saved">Rule saved</string>
+    <string name="rules_deleted">Rule deleted</string>
+    <string name="rules_delete_title">Delete rule?</string>
+    <string name="rules_delete_message">"%1$s" will stop firing on every device.</string>
+    <string name="rules_scope_device">On device</string>
+    <string name="rules_scope_control">In AppControl</string>
+    <string name="rules_scope_device_hint">Evaluated by AppClient itself, also offline and while AppControl is closed.</string>
+    <string name="rules_scope_control_hint">Evaluated by this app while it runs; can push commands and notifications.</string>
+    <string name="rules_all_devices">All devices</string>
+    <string name="rules_actions_summary">Actions: %1$s · cooldown %2$s</string>
+    <string name="rules_field_name">Name</string>
+    <string name="rules_field_scope">Runs</string>
+    <string name="rules_field_devices">Target devices</string>
+    <string name="rules_field_conditions">Conditions</string>
+    <string name="rules_field_actions">Actions</string>
+    <string name="rules_field_policy">Firing policy</string>
+    <string name="rules_field_cooldown">Cooldown (minutes)</string>
+    <string name="rules_field_edge">Fire once per transition</string>
+    <string name="rules_field_edge_hint">Re-arms only after the condition becomes false again.</string>
+    <string name="rules_field_enabled">Enabled</string>
+    <string name="rules_match_all">All conditions</string>
+    <string name="rules_match_any">Any condition</string>
+    <string name="rules_add">Add</string>
+    <string name="rules_remove">Remove</string>
+    <string name="rules_condition_field">State</string>
+    <string name="rules_condition_operator">Operator</string>
+    <string name="rules_condition_value">Value</string>
+    <string name="rules_condition_center">Center (lat, lng)</string>
+    <string name="rules_condition_radius">Radius (meters)</string>
+    <string name="rules_action_type">Action</string>
+    <string name="rules_param_key">Config key (e.g. locationIntervalMs)</string>
+    <string name="rules_param_value">Value</string>
+    <string name="rules_param_command">Command id (e.g. start_monitoring)</string>
+    <string name="rules_param_title">Title (optional)</string>
+    <string name="rules_param_body">Body (optional)</string>
+    <string name="rules_param_message">Message</string>
+    <string name="rules_error_name">Give the rule a name</string>
+    <string name="rules_error_conditions">Add at least one condition</string>
+    <string name="rules_error_condition_value">A condition has an invalid value</string>
+    <string name="rules_error_actions">Add at least one action</string>
+    <string name="rules_command_body">Tap to run: %1$s</string>
+    <string name="rules_alert_channel">Rule alerts</string>
+    <string name="rules_alert_default">Rule fired on %1$s</string>
+    <string name="action_edit">Edit</string>
+</resources>

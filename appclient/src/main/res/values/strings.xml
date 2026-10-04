@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">AppClient</string>
+
+    <!-- Common actions & statuses, reused across multiple screens -->
+    <string name="common_action_continue">Continue</string>
+    <string name="common_action_cancel">Cancel</string>
+    <string name="common_action_open">Open</string>
+    <string name="common_action_open_settings">Open Settings</string>
+    <string name="common_action_retry">Retry</string>
+    <string name="common_action_grant">Allow</string>
+    <string name="common_status_granted">Granted</string>
+    <string name="common_status_required">Required</string>
+
+    <!-- Permission setup screen -->
+    <string name="permission_screen_title">Permissions Required</string>
+    <string name="permission_screen_subtitle">Grant the permissions below so every monitoring feature can work reliably.</string>
+    <string name="permission_screen_notice_required">All permissions listed here are required before you can continue.</string>
+    <string name="permission_screen_progress">%1$d of %2$d permissions granted</string>
+    <string name="permission_screen_group_runtime">Basic Permissions</string>
+    <string name="permission_screen_group_special">Special Permissions</string>
+
+    <!-- Individual runtime / special permissions -->
+    <string name="permission_notifications_title">Notifications</string>
+    <string name="permission_notifications_desc">Allow the app to show important notifications and keep the service visible</string>
+    <string name="permission_notification_listener_title">Notification Access</string>
+    <string name="permission_notification_listener_desc">Lets the app read incoming notifications so they can be forwarded</string>
+    <string name="permission_contacts_title">Contacts</string>
+    <string name="permission_contacts_desc">Used to read your important contacts</string>
+    <string name="permission_storage_read_title">Read Storage</string>
+    <string name="permission_storage_read_desc">Needed to read files on this device</string>
+    <string name="permission_storage_manage_title">Manage All Files</string>
+    <string name="permission_storage_manage_desc">Needed for access to all files on this device</string>
+    <string name="permission_battery_title">Battery Optimization Exemption</string>
+    <string name="permission_battery_desc">Let the app run without battery-optimization limits so the monitoring service stays alive in the background</string>
+    <string name="permission_location_title">Location</string>
+    <string name="permission_location_desc">Optional. Shares this device\'s position with AppControl only after you explicitly agree</string>
+    <string name="permission_background_location_title">Background Location</string>
+    <string name="permission_background_location_desc">Optional. Keeps location sharing running while the app is closed</string>
+    <string name="permission_usage_stats_title">Usage access</string>
+    <string name="permission_usage_stats_desc">Optional. Reports how long each app is used for monitoring</string>
+
+    <!-- Location sharing: consent flow -->
+    <string name="location_consent_title">⚠ Warning: Location Sharing</string>
+    <string name="location_consent_intro">AppControl is asking to see this device\'s location. Nothing is shared until you agree. Please read what this means:</string>
+    <string name="location_consent_point_what">What is collected: GPS coordinates, accuracy, altitude, speed, heading and the time of each fix.</string>
+    <string name="location_consent_point_when">When: automatically about every %1$s in the background, and immediately whenever AppControl requests your current position.</string>
+    <string name="location_consent_point_where">Where it goes: your location is uploaded to the Firebase database of this project and is visible in realtime to the AppControl operator.</string>
+    <string name="location_consent_point_history">History: the last 50 positions are kept on the server.</string>
+    <string name="location_consent_point_notification">Visibility: a permanent notification \"Location sharing is active\" is shown the whole time.</string>
+    <string name="location_consent_point_stop">Control: you can stop at any time with the \"Stop Location\" button in that notification or by revoking the location permission.</string>
+    <string name="location_consent_footer">Android will ask for the location permission next. You can decline; no location is ever read without permission and your consent.</string>
+    <string name="location_consent_accept">I agree, continue</string>
+    <string name="location_consent_decline">Not now</string>
+    <string name="location_background_title">Allow location \"all the time\"?</string>
+    <string name="location_background_message">To keep sharing after you leave the app (and after a reboot), Android requires the \"Allow all the time\" option. This is optional: if you skip it, sharing keeps working through the visible notification while the app has been opened.</string>
+    <string name="location_permission_denied_title">Location permission denied</string>
+    <string name="location_permission_denied_message">The location permission was permanently denied, so sharing cannot start. You can enable it manually in App Settings → Permissions → Location.</string>
+    <string name="location_gps_off_title">Location is turned off</string>
+    <string name="location_gps_off_message">Device location (GPS) is disabled, so no position can be determined. Turn it on in the Location settings to start sharing.</string>
+    <string name="location_action_enable_location">Enable location</string>
+    <string name="location_action_not_now">Not now</string>
+    <string name="location_action_skip">Skip</string>
+    <plurals name="location_interval_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <string name="location_interval_seconds">%d seconds</string>
+
+    <!-- Location sharing: persistent notification -->
+    <string name="location_channel_name">Location sharing</string>
+    <string name="location_channel_description">Shown while this device shares its location with AppControl</string>
+    <string name="location_notification_title">Location sharing is active</string>
+    <string name="location_notification_waiting">Waiting for the first location fix…</string>
+    <string name="location_notification_last_update">Last update %1$s · accuracy ±%2$d m · tap Stop to end sharing</string>
+    <string name="location_notification_gps_off">Location is turned off — tap to enable it</string>
+    <string name="location_notification_action_stop">Stop Location</string>
+
+    <!-- Runtime permission request dialog (PermissionRequestActivity) -->
+    <string name="permission_request_default_title">Required Permission</string>
+    <string name="permission_request_default_rationale">The app requires this permission to function properly.</string>
+    <string name="permission_request_permanently_denied_hint">This permission was previously permanently denied. Go to App Settings to enable it manually.</string>
+
+    <!-- Foreground services -->
+    <string name="service_monitoring_channel_name">System</string>
+    <string name="service_monitoring_notification_title">System service is running</string>
+    <string name="service_watchdog_notification_title">Starting monitoring service…</string>
+
+    <!-- Notification reply action -->
+    <string name="notification_reply_channel_name">Reply Notifications</string>
+    <string name="notification_reply_sending">Sending…</string>
+
+    <!-- In-app WebView -->
+    <string name="webview_action_back">Back</string>
+    <string name="webview_action_forward">Forward</string>
+    <string name="webview_action_reload">Reload</string>
+    <string name="webview_action_close">Close</string>
+    <string name="webview_error_title">Page failed to load</string>
+    <string name="webview_error_unknown">Unknown error</string>
+
+    <!-- Clipboard write action -->
+    <string name="clipboard_copied_with_label">\"%1$s\" copied</string>
+    <string name="clipboard_copied_generic">Copied to clipboard</string>
+
+    <!-- Offline state -->
+    <string name="offline_banner_title">You are offline</string>
+    <string name="offline_banner_message">Some features are paused until the connection is restored.</string>
+    <string name="offline_state_title">No internet connection</string>
+    <string name="offline_state_message">AppClient needs internet to load its configuration and stay connected to AppControl. Monitoring will resume automatically once you are back online.</string>
+
+    <!-- File transfer -->
+    <string name="transfer_channel_name">File Transfers</string>
+    <string name="transfer_channel_description">Progress and results of files exchanged with AppControl</string>
+    <string name="transfer_notification_idle">Preparing file transfer…</string>
+    <string name="transfer_notification_downloading">Downloading %1$s</string>
+    <string name="transfer_notification_uploading">Uploading to AppControl</string>
+    <string name="transfer_notification_preparing">Preparing…</string>
+    <string name="transfer_notification_file_of">File %1$d of %2$d</string>
+    <string name="transfer_notification_attempt">attempt %1$d</string>
+    <string name="transfer_notification_queued">%1$d queued</string>
+    <string name="transfer_notification_download_done">File saved to Downloads</string>
+    <string name="transfer_notification_upload_done">File sent to AppControl</string>
+    <string name="transfer_notification_failed">File transfer failed</string>
+    <plurals name="transfer_notification_files_sent" translatable="false">
+        <item quantity="one">%1$d file uploaded</item>
+        <item quantity="other">%1$d files uploaded</item>
+    </plurals>
+    <string name="transfer_preparing_upload">Preparing file…</string>
+    <string name="transfer_error_storage_permission">Storage permission is required to read this file. Grant it in App Settings and retry.</string>
+</resources>

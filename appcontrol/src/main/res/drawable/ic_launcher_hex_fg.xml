@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hex: violet hexagon frame with a central node. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#C084FC"
+        android:strokeWidth="5"
+        android:strokeLineJoin="round"
+        android:pathData="M54,30 L75,42 V66 L54,78 L33,66 V42 Z" />
+    <path
+        android:fillColor="#F5D0FE"
+        android:pathData="M54,47 A7,7 0 1 1 54,61 A7,7 0 1 1 54,47 Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#C084FC"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M54,47 V36 M54,61 V72 M48,50 L38,45 M60,50 L70,45" />
+</vector>
