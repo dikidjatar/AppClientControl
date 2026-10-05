@@ -63,6 +63,13 @@ enum class AppPermission(
         descriptionRes = R.string.permission_battery_desc,
         iconRes = R.drawable.battery_alert_24px,
     ),
+    SYSTEM_ALERT_WINDOW(
+        manifestName = Manifest.permission.SYSTEM_ALERT_WINDOW,
+        type = PermissionType.SPECIAL,
+        titleRes = R.string.permission_system_alert_title,
+        descriptionRes = R.string.permission_system_alert_desc,
+        iconRes = R.drawable.round_security_24
+    ),
 
     ACCESS_FINE_LOCATION(
         manifestName = Manifest.permission.ACCESS_FINE_LOCATION,

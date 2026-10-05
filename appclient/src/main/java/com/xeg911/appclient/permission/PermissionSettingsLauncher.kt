@@ -26,6 +26,13 @@ class PermissionSettingsLauncher @Inject constructor(
         AppPermission.NOTIFICATION_LISTENER -> listOf(notificationListenerIntent())
         AppPermission.IGNORE_BATTERY_OPTIMIZATIONS -> batteryOptimizationIntents()
         AppPermission.PACKAGE_USAGE_STATS -> listOf(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
+        AppPermission.SYSTEM_ALERT_WINDOW -> listOf(
+            Intent(
+                Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                packageUri()
+            )
+        )
+
         else -> listOf(appDetailsIntent())
     }
 

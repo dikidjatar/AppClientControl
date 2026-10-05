@@ -8,6 +8,7 @@ import android.content.pm.PermissionInfo
 import android.os.Build
 import android.os.Environment
 import android.os.PowerManager
+import android.provider.Settings
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import com.xeg911.appclient.core.device.UsageStatsProvider
@@ -41,6 +42,8 @@ class PermissionChecker @Inject constructor(
                 .isIgnoringBatteryOptimizations(context.packageName)
 
         Manifest.permission.PACKAGE_USAGE_STATS -> usageStatsProvider.hasPermission()
+            
+        Manifest.permission.SYSTEM_ALERT_WINDOW -> Settings.canDrawOverlays(context)
 
         Manifest.permission.POST_NOTIFICATIONS ->
             Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU ||

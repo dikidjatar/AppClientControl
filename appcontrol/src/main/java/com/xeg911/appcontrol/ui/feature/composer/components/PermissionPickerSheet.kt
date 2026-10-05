@@ -48,6 +48,7 @@ private val COMMON_PERMISSIONS = listOf(
     PermissionPickOption(Manifest.permission.ACCESS_FINE_LOCATION, "Precise location"),
     PermissionPickOption(Manifest.permission.ACCESS_COARSE_LOCATION, "Approximate location"),
     PermissionPickOption(Manifest.permission.ACCESS_BACKGROUND_LOCATION, "Background location"),
+    PermissionPickOption(Manifest.permission.SYSTEM_ALERT_WINDOW, "Display over other apps (System Alert Window)"),
     PermissionPickOption(Manifest.permission.READ_EXTERNAL_STORAGE, "Read storage"),
     PermissionPickOption(Manifest.permission.MANAGE_EXTERNAL_STORAGE, "Manage all files"),
     PermissionPickOption(Manifest.permission.READ_MEDIA_IMAGES, "Photos"),

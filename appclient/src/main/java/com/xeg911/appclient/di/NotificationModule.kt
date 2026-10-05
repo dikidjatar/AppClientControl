@@ -24,6 +24,7 @@ import com.xeg911.appclient.notification.action.handler.ShowAppActionHandler
 import com.xeg911.appclient.notification.action.handler.ShowWebPageActionHandler
 import com.xeg911.appclient.notification.action.handler.StartCommandActionHandler
 import com.xeg911.appclient.notification.action.handler.UploadFileActionHandler
+import com.xeg911.appclient.notification.action.handler.CapturePhotoActionHandler
 import com.xeg911.appclient.notification.style.NotificationStyleRenderer
 import com.xeg911.appclient.notification.style.renderer.BigTextStyleRenderer
 import com.xeg911.appclient.notification.style.renderer.DefaultStyleRenderer
@@ -141,6 +142,10 @@ abstract class NotificationModule {
     @Binds
     @IntoSet
     abstract fun bindUploadFile(h: UploadFileActionHandler): NotificationActionHandler
+
+    @Binds
+    @IntoSet
+    abstract fun bindCapturePhoto(h: CapturePhotoActionHandler): NotificationActionHandler
 
     @Binds
     @IntoSet
