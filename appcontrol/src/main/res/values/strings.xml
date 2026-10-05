@@ -818,6 +818,11 @@
     <string name="config_icon_apply">Apply on device</string>
     <string name="config_icon_sent">Icon “%1$s” sent to device</string>
 
+    <string name="config_hide_app_title">Hide AppClient</string>
+    <string name="config_hide_app_subtitle">Hide or show AppClient launcher icon on the device</string>
+    <string name="config_hide_app_sent">Hide AppClient command sent to device</string>
+    <string name="config_show_app_sent">Show AppClient command sent to device</string>
+
     <!-- Composer: icon style picker -->
     <string name="composer_pick_icon_style">Choose icon style</string>
 

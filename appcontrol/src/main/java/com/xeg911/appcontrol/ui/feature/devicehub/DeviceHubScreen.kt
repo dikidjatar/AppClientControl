@@ -313,6 +313,7 @@ fun DeviceHubScreen(
                             onSaveRequiredPermissions = deviceHubViewModel::saveRequiredPermissions,
                             isApplyingIcon = isApplyingIcon,
                             onApplyClientIcon = deviceHubViewModel::applyClientIcon,
+                            onSetAppClientVisibility = deviceHubViewModel::setAppClientVisibility,
                         )
                     }
                 }

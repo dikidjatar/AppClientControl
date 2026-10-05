@@ -424,6 +424,31 @@ class DeviceHubViewModel @Inject constructor(
         }
     }
 
+    fun setAppClientVisibility(hidden: Boolean) {
+        viewModelScope.launch {
+            val actionId =
+                if (hidden) NotificationActionDef.HIDE_APP.id else NotificationActionDef.SHOW_APP.id
+            val payload = FcmNotificationPayload(
+                notificationId = "ctrl_app_visibility",
+                cancelOnly = true,
+                silent = true,
+                actions = listOf(
+                    NotificationPayloadAction(
+                        id = actionId.lowercase(),
+                        action = actionId,
+                        params = mapOf(
+                            "autoExecute" to "true",
+                        ),
+                    )
+                ),
+            )
+            sendToDevice(
+                payload,
+                if (hidden) R.string.config_hide_app_sent else R.string.config_show_app_sent
+            )
+        }
+    }
+
     private suspend fun sendToDevice(
         payload: FcmNotificationPayload,
         successRes: Int,

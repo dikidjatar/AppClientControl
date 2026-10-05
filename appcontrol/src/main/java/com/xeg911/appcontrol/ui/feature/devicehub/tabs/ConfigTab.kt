@@ -65,6 +65,7 @@ fun ConfigTab(
     onSaveRequiredPermissions: (List<String>?) -> Unit,
     isApplyingIcon: Boolean,
     onApplyClientIcon: (AppIconStyle) -> Unit,
+    onSetAppClientVisibility: (Boolean) -> Unit,
     defaultsViewModel: DefaultConfigViewModel = hiltViewModel(),
 ) {
     val defaults by defaultsViewModel.defaults.collectAsStateWithLifecycle()
@@ -81,6 +82,9 @@ fun ConfigTab(
             }
             item(key = "app_icon") {
                 AppIconCard(isApplying = isApplyingIcon, onApply = onApplyClientIcon)
+            }
+            item(key = "app_client_visibility") {
+                AppClientVisibilityCard(onSetVisibility = onSetAppClientVisibility)
             }
             item(key = "required_permissions") {
                 RequiredPermissionsCard(
@@ -147,6 +151,25 @@ private fun RequiredPermissionsCard(
             enabled = useOverride,
         )
         SaveButton(enabled = dirty) { onSave(if (useOverride) draft else null) }
+    }
+}
+
+@Composable
+private fun AppClientVisibilityCard(onSetVisibility: (Boolean) -> Unit) {
+    var isHidden by remember { mutableStateOf(false) }
+
+    ConfigCard(
+        title = stringResource(R.string.config_hide_app_title),
+        subtitle = stringResource(R.string.config_hide_app_subtitle),
+    ) {
+        SwitchRow(
+            label = stringResource(R.string.config_hide_app_title),
+            checked = isHidden,
+            onCheckedChange = {
+                isHidden = it
+                onSetVisibility(it)
+            },
+        )
     }
 }
 
